@@ -1,16 +1,29 @@
-li {
-  list-style-type: none;
-  color: #e40007;
+.col-md-8{
+  height: 200px;
+  background-color: blue;
+}
+.col-md-4{
+  height: 200px;
+  background-color: red;
 }
 
-@media screen and (min-width: 300px) {
-  .col-md-3 {
-    background-color: blue;
+.col-sm-1{
+  height: 100px;
+  background-color: black;
+  border: 2px solid green;
+}
+
+/*media query starts*/
+
+@media /*<--rule*/ screen /*<--media*/ and (min-width: 575px){
+  .col-sm-1{
+    background-color: red;
   }
 }
 
-@media screen and (min-width: 500px) {
-  .col-md-3 {
-    background-color: purple;
+
+@media /*<--rule*/ screen /*<--media*/ and (min-width: 768px){
+  .col-sm-1{
+    background-color: blue;
   }
 }
